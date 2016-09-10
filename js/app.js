@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 
     // countdown settings
-    $("#clock").countdown("2016/12/01", function(event) {
+    $("#clock").countdown("2016/10/01", function(event) {
         $(this).text(event.strftime('%D days %Hh %Mm %Ss'));
     });
 
