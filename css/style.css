@@ -2972,7 +2972,7 @@ kbd {
     padding: 3px 25px 7px 0;
     text-align: right;
     border-bottom: none;
-    background: right top no-repeat url("../images_css/content/small_arrow.png");
+    background: right top no-repeat url("../images/small_arrow.png");
     font-family: 'Vollkorn', "Microsoft YaHei", "微软雅黑", Georgia, serif
 }
 #relatedLinksBottom #news ul li:last-child a:hover,
@@ -3301,7 +3301,7 @@ kbd {
     padding: 3px 25px 7px 0;
     text-align: right;
     border-bottom: none;
-    background: right top no-repeat url("../images_css/content/small_arrow.png");
+    background: right top no-repeat url("../images/small_arrow.png");
     font-family: 'Vollkorn', "Microsoft YaHei", "微软雅黑", Georgia, serif
 }
 #rightCol #news ul li:last-child a:hover,
@@ -3940,14 +3940,14 @@ table.table_noStyle tr {
     width: 96%;
     height: 1.9375rem;
     padding-left: 4%;
-    background-image: url("../images_css/navigation/small_arrow_out.png");
+    background-image: url("../images/small_arrow_out.png");
     background-repeat: no-repeat;
     background-position: 95% center;
     font-family: 'Vollkorn', "Microsoft YaHei", "微软雅黑", Georgia, serif
 }
 .widget p a.linkArrow:hover {
     text-decoration: underline;
-    background-image: url("../images_css/content/small_arrow_over.png")
+    background-image: url("../images/small_arrow_over.png")
 }
 .widget img {
     display: block;
