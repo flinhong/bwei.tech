@@ -263,7 +263,7 @@ header #headerContent {
 }
 @media only screen and (min-width: 50.0625em) {
     header #headerContent {
-        margin: 27px 0 28px 0
+        margin: 27px 0 0 0
     }
 }
 @media only screen and (min-width: 36em) and (max-width: 50rem) {
@@ -1141,7 +1141,7 @@ nav {
         float: none;
         width: 100%;
         height: 36px;
-        margin-top: 30px;
+        margin-top: 10px;
         margin-bottom: 10px;
         color: #323232;
         border-top: 1px solid #d1cfc7;
