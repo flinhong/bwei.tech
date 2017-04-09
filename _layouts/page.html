@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+		<!-- *************************************
+		*********** Begin body content *********** 
+		************************************** -->
+		<div id="body-content">
+
+		
+			<!-- ====================================
+			/////// Begin blog single cection ///////
+			===================================== -->
+			<section id="blog-single-cection">
+				<div class="container-fluid max-width-1200">
+								
+					<!-- Begin blog single wrap
+					============================ -->
+					<div class="blog-single-wrap">
+						<div class="row">
+
+							<!-- Content column -->
+							<div class="col-md-12">
+
+								<!-- Begin blog single post 
+								============================= -->
+								<article class="blog-single-post">
+
+
+
+									<!-- Begin blog single heading -->
+									<div class="blog-single-post-heading">
+										<h1 class="blog-single-post-title">{{ page.title }}</h1>
+									</div>
+									<!-- End blog single heading -->
+
+									<!-- Begin blog single post inner -->
+									<div class="blog-single-post-inner">
+
+
+										<!-- Begin post content -->
+										<div class="post-content lightgallery">
+
+                                            {{ content }}
+
+										</div>
+										<!-- End post content -->
+
+
+                                        {% include share.html %}
+
+									</div>
+									<!-- End blog single post inner -->
+
+								</article> 
+								<!-- End blog single post -->
+
+								{% include comments.html %}
+
+							</div> <!-- /.col (Content column) -->
+
+						</div> <!-- /.row -->
+					</div>
+					<!-- End blog single wrap -->
+
+				</div> <!-- /.container -->
+			</section>
+			<!-- End blog single cection -->
+
+		</div>
+		<!-- End body content -->

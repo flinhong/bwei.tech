@@ -1,0 +1,283 @@
+---
+layout: default
+---
+
+		<!-- *************************************
+		*********** Begin body content *********** 
+		************************************** -->
+		<div id="body-content">
+
+			<!-- ====================================
+			/////// Begin blog single cection ///////
+			===================================== -->
+			<section id="blog-single-cection">
+				<div class="container-fluid max-width-1400">
+								
+					<!-- Begin blog single wrap
+					============================ -->
+					<div class="blog-single-wrap">
+						<div class="row">
+
+							<!-- Content column -->
+							<div class="col-md-8">
+
+								<!-- Begin blog single post 
+								============================= -->
+								<article class="blog-single-post">
+
+									{% if page.image %}
+									<!-- Blog single image -->
+									<div class="blog-single-image bg-image" style="background-image: url({{ page.image }});"></div>
+									{% endif %}
+
+									<!-- Begin blog single heading -->
+									<div class="blog-single-post-heading">
+										<h1 class="blog-single-post-title post-title-firebase text-none">{{ page.title }}</h1>
+										<div class="blog-single-post-category">
+											{% for cat in page.categories %}
+											<a href="/categories/{{ cat | downcase }}#{{ page.title | slugify }}">{{ cat }}</a>
+											{% endfor %}
+										</div>
+									</div>
+									<!-- End blog single heading -->
+
+									<!-- Begin blog single post inner -->
+									<div class="blog-single-post-inner">
+
+										<!-- Begin blog single attributes -->
+										<div class="blog-single-attributes">
+											<div class="row">
+												<div class="col-sm-8">
+
+													<!-- Begin blog single meta -->
+													<div class="blog-single-meta-wrap">
+
+														<!-- Blog single author avatar -->
+														<a href="" class="author-avatar pull-left bg-image" style="background-image: url(/assets/img/avatar.jpg);"></a>
+
+														<div class="blog-single-meta">
+															<div class="article-author">by: <a href="#">{{ site.author }}</a></div>
+															<div class="article-time-cat">
+																<span class="article-time">{{ page.date | date: "%b %d, %Y" }}</span>
+															</div>
+														</div>
+
+													</div>
+													<!-- End blog single meta -->
+
+												</div> <!-- /.col -->
+
+												<div class="col-sm-4">
+
+													<!-- Begin blog single links -->
+													<ul class="blog-single-links list-unstyled list-inline">
+														<li>
+															<!-- Begin comments count -->
+															{% if site.firebase-comments %}
+															<a href="#blog-post-comments" class="blog-single-comment-count sm-scroll" title="Read the Comments"><i class="fa fa-comment-o"></i> <span class="firebase-comment-count">Comments</span></a>
+															{% endif %}
+															<!-- End comments count -->
+														</li>
+														<li>
+															<!-- Begin views count -->
+															<div class="blog-single-views-count" title="Post Views"><i class="fa fa-eye"></i> <span class="pageviews">1</span></div>
+															<!-- End views count -->
+														</li>
+													</ul>
+													<!-- End blog single links -->
+
+												</div> <!-- /.col -->
+											</div> <!-- /.row -->
+										</div>
+										<!-- End blog single attributes -->
+
+										<!-- Begin post content -->
+										<div class="post-content lightgallery">
+
+											{{ content }}
+
+										</div>
+										<!-- End post content -->
+
+										<!-- Begin blog single attributes -->
+										<div class="blog-single-attributes margin-top-60">
+											<div class="row">
+												<div class="col-sm-8">
+
+													<!-- Begin blog single tags -->
+													<div class="blog-single-tags">
+														<ul>
+															<li><span>Tags:</span></li>
+															{% for tag in page.tags %}
+															<li><a href="/tags#heading-{{ tag | slugify }}">{{ tag }}</a></li>
+															{% endfor %}								
+														</ul>
+													</div>
+													<!-- End blog single tags -->
+
+												</div> <!-- /.col -->
+
+												<div class="col-sm-4 text-right">
+
+													<!-- Begin blog single links -->
+													<ul class="blog-single-links list-unstyled list-inline">
+														<!--Like Button-->
+														<li>
+															<div class="favorite-btn">
+																<div class="fav-inner">
+																	<div class="icon-heart">
+																		<span class="icon-heart-empty" title="Like"></span>
+																		<span class="icon-heart-filled" title="Unlike"></span>
+																	</div>
+																</div>
+																<div class="fav-count" title="Like counter">0</div>
+															</div>
+														</li>
+														<li>
+															<!-- Begin leave a comment button -->
+															<a href="#post-comment-form" class="leave-comment-btn sm-scroll">Leave a Comment</a>
+															<!-- End leave a comment button -->
+														</li>
+													</ul>
+													<!-- End blog single links -->
+
+												</div> <!-- /.col -->
+											</div> <!-- /.col -->
+										</div>
+										<!-- End blog single attributes -->
+
+										{% include share.html %}
+
+									</div>
+									<!-- End blog single post inner -->
+
+								</article> 
+								<!-- End blog single post -->
+
+
+								<!-- Begin blog single nav 
+								=========================== -->
+								<div class="blog-single-nav">
+									<div class="bs-nav-col bs-nav-left">
+										<div class="bs-nav-text"><i class="fa fa-angle-double-left"></i> Prev Post</div>
+                                        {% if page.previous.url %}
+										<a href="{{ page.previous.url }}" class="bs-nav-title"><h4>{{ page.previous.title }}</h4></a>
+                                        {% else %}
+                                        <a href="/blog/" class="bs-nav-title"><h4>No previous post, back to Blog</h4></a>
+                                        {% endif %}
+									</div>
+									<div class="bs-nav-col bs-nav-right">
+										<div class="bs-nav-text">Next Post <i class="fa fa-angle-double-right"></i></div>
+                                        {% if page.next.url %}
+										<a href="{{ page.next.url }}" class="bs-nav-title"><h4>{{ page.next.title }}</h4></a>
+                                        {% else %}
+                                        <a href="/blog/" class="bs-nav-title"><h4>No more posts, back to Blog</h4></a>
+                                        {% endif %}
+									</div>
+								</div>
+								<!-- End blog single nav -->
+
+								{% include related.html %}
+
+								{% include comments.html %}
+
+							</div> <!-- /.col (Content column) -->
+
+							<!-- Sidebar column -->
+							<div class="col-md-4">
+
+								<!-- Begin sidebar (sidebar right) 
+								=================================== -->
+								<div class="sidebar sidebar-right">
+									<div class="row">
+
+										<div class="col-sm-12">
+
+											<!-- Begin sidebar widget -->
+											<div class="sidebar-widget blog-author no-margin-top">
+												<h3 data-toc-skip class="sidebar-heading">About Me</h3>
+												<div class="blog-author-img"> <img src="/assets/img/avatar.jpg" alt="{{ site.author }}"></div>
+												<div class="blog-author-info">
+													<h4 class="blog-author-name">{{ site.author }}</h4>
+													<div class="blog-author-sub">Programmer &amp; Photographer</div>
+													<p class="blog-author-text">
+														Programming sorts my life, photographing makes it random...<br>
+														Then, blogging connects all the matters.
+													</p>
+													<a href="/about/" class="blog-author-more" title="Read more about me">Read More</a>
+												</div>
+											</div>
+											<!-- End sidebar widget -->
+
+										</div> <!-- /.col -->
+
+										<div class="col-sm-12">
+
+											<!-- Begin sidebar widget -->
+											<div class="sidebar-widget sidebar-search">
+												<form id="blog-search-form" class="form-btn-inside" method="get" action="/search/" target="_blank">
+													<div class="form-group no-margin">
+														<input type="text" class="form-control" id="blog-search" name="q" placeholder="Search..." autocomplete="off">
+														<button type="submit"><i class="fa fa-search"></i></button>
+													</div>
+												</form>
+												<div id="search-container">
+													<ul id="results-container"></ul>
+												</div>
+											</div>
+											<!-- End sidebar widget -->
+
+										</div> <!-- /.col -->
+
+
+										<div class="hidden-sm hidden-xs col-md-12 col-sm-6{% if page.toc %}{% else %} stickit-list{% endif %}">
+
+											<!-- Begin sidebar widget -->
+											<div class="sidebar-widget sidebar-post-list">
+												<h3 data-toc-skip class="sidebar-heading">Recent Posts</h3>
+												<ul class="list-unstyled">
+													{% for post in site.posts limit:5 %}
+													<li>
+														<a href="{{ post.url }}" class="post-thumb bg-image" style="background-image: url({% if post.image %}{{ post.image }}{% else %}/images/default.jpg{% endif %}); background-position: 50% 50%;"></a>
+														<div class="post-data">
+															<h5 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+															<!-- <span class="author">By: <a href="">Martin Vegas</a></span> -->
+															<span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+														</div>
+													</li>
+													{% endfor %}											
+												</ul>
+											</div>
+											<!-- End sidebar widget -->
+
+										</div> <!-- /.col -->
+
+										{% if page.toc %}
+										<div class="col-md-12 col-sm-6 hidden-xs hidden-sm stickit-toc">
+
+											<!-- Begin sidebar widget -->
+											<div class="sidebar-widget sidebar-toc">
+												<h3 data-toc-skip class="sidebar-heading">Table of Contents</h3>
+												<ul class="nav nav-pills nav-stacked"><div id="toc"></div></ul>
+											</div>
+											<!-- End sidebar widget -->
+
+										</div> <!-- /.col -->
+										{% endif %}
+
+									</div> <!-- /.row -->
+								</div>
+								<!-- End sidebar -->
+
+							</div> <!-- /.col (Sidebar column) -->
+
+						</div> <!-- /.row -->
+					</div>
+					<!-- End blog single wrap -->
+
+				</div> <!-- /.container -->
+			</section>
+			<!-- End blog single cection -->
+
+		</div>
+		<!-- End body content -->

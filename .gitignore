@@ -1,0 +1,10 @@
+_site
+.sass-cache
+.jekyll-metadata
+public
+Gemfile
+Gemfile.lock
+.firebaserc
+database.rules.json
+debug.log
+firebase.json

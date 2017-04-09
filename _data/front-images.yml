@@ -1,0 +1,25 @@
+- path: /images/slider/class of 2015.jpg
+  time: Aug 8 2015
+  title: 2015 届研究生
+  description: 一年复一年，终点复起点
+
+- path: /images/slider/class of 2014.jpg
+  time: June 25 2014
+  title: 2014 届研究生
+  description: 人生没有毕业礼，但我们有毕业的洗礼
+
+- path: /images/feature/201611.png
+  time: December 2016
+  title: Newly Online
+  description: Effect of periodically modified n-type electron transport layers on the optoelectrical performance of organic light-emitting diodes
+  journal: Mater Sci Semicond Process
+  url: http://www.sciencedirect.com/science/article/pii/S1369800116302359
+  doi: "DOI: 10.1016/j.mssp.2016.07.022"
+
+- path: /images/feature/201611-1.png
+  time: December 2016
+  title: Newly Online
+  description: Temperature and Exciton Concentration Induced Excimer Emission of 4,4′-Bis(4′′-Triphenylsilyl) Phenyl-1,1′-Binaphthalene and Application for Sunlight-Like White Organic Light-Emitting Diodes
+  journal: Nanoscale Res. Lett.
+  url: http://nanoscalereslett.springeropen.com/articles/10.1186/s11671-016-1578-3
+  doi: "DOI: 10.1186/s11671-016-1578-3"

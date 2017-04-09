@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+		<!-- *************************************
+		*********** Begin body content *********** 
+		************************************** -->
+		<div id="body-content">
+
+			<!-- =========================
+			///// Begin page section /////
+			========================== -->
+			<section id="page-section" class="no-padding">
+
+				<div class="split-box">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="row-lg-height">
+								
+								<!-- Column -->
+								<div class="col-lg-6 col-lg-push-6 col-lg-height split-box-image no-padding bg-image" style="background-image: url(/assets/img/doc/misc-3.jpg); background-position: 50% 50%;">
+									
+									<div class="sbi-height"></div>
+
+								</div> <!-- /.col -->
+
+								<!-- Column -->
+								<div class="col-lg-6 col-lg-pull-6 col-lg-height col-lg-middle no-padding">
+
+									<!-- Begin split box content 
+									============================= 
+									* Use class "shifted-left" or "shifted-right" to enable shifted content (do not use for long content).
+									-->
+									<div class="split-box-content text-left">
+
+                                        {% for post in site.categories[page.category] %}
+                                        <h3 id='{{ post.title | slugify }}'><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                                        <p>{{ post.description }}</p>
+                                        <br>
+                                        {% endfor %}
+
+										<p>:)</p>
+									</div>
+									<!-- End split box content -->
+
+								</div> <!-- /.col -->
+							</div> <!-- /.row-height -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div>
+				<!-- End split box -->
+
+			</section>
+			<!-- End section -->
+
+		</div>
+		<!-- End body content -->
