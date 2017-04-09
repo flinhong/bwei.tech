@@ -84,9 +84,9 @@ description: Organic Electronics Research Group at the Key Laboratory of Advance
       <ul>
         {% for seminar in site.data.seminar limit:3 %}
         <li>
-          <a href="{{ seminar.url }}"></a>
+          <a href="{{ seminar.url }}">
           <h3>{{ seminar.title }}</h3>
-          <p>{{ seminar.time }}</p>
+          <p>{{ seminar.time }}</p></a>
         </li>
         {% endfor %}
       </ul>
