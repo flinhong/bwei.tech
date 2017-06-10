@@ -1,0 +1,19 @@
+    <div id="rightCol">
+      <!-- #BeginEditable "Right Col" -->
+      <a href="#">
+        <img src="/images/join.jpg" alt="Join Us" width="187" height="51">
+      </a>
+
+      <div id="news">
+        <h2>实验室新闻</h2>
+        <ul>
+          {% for news in site.data.news limit:7 %}
+          <li><a href="{{ news.url }}">{{ news.title }}</a></li>
+          {% endfor %}
+          <li>
+            <a href="http://www.fpd.shu.edu.cn/Default.aspx?tabid=2951">更多</a>
+          </li>
+        </ul>
+      </div>
+
+    </div><!--rightCol -->

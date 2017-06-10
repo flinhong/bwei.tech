@@ -172,7 +172,7 @@ body {
 h1 {
     font-size: 1.66667rem;
     font-weight: normal;
-    font-style: italic;
+    /*font-style: italic;*/
     line-height: 1.5em;
     color: #4a4244;
     font-family: 'Crimson Text', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', 'Microsoft YaHei', '微软雅黑', Georgia, serif
@@ -2169,7 +2169,7 @@ main img#mainImg {
     border-top: none
 }
 p#subH1 {
-    font-size: 1.33333rem;
+    font-size: 1.2rem;
     line-height: 1.5em;
     color: #7a7a7a;
     font-family: 'Crimson Text', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', 'Microsoft YaHei', '微软雅黑', Georgia, serif
@@ -2682,12 +2682,12 @@ kbd {
 @media only screen and (min-width: 50.0625em) {
     #pageTopics ul {
         margin: 0;
-        padding: 5px 0 20px 25px;
+        padding: 5px 0 0 20px;
         border: none
     }
 }
 #pageTopics ul li {
-    font-size: 0.83333rem;
+    font-size: 1rem;
     line-height: 1.5em;
     margin: 0;
     padding-bottom: 0.625rem
@@ -2703,7 +2703,7 @@ kbd {
     }
 }
 #pageTopics ul li a {
-    padding-left: 15px;
+    padding-left: 10px;
     text-decoration: none;
     color: #6d6c6c
 }
@@ -3271,7 +3271,7 @@ kbd {
 #rightCol #news h2,
 #rightCol #newsColor h2 {
     font-size: 18px;
-    font-style: italic;
+    /*font-style: italic;*/
     margin-bottom: 0;
     padding: 5px 0;
     letter-spacing: 0;

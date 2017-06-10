@@ -2,70 +2,37 @@
 layout: default
 ---
 
-		<!-- *************************************
-		*********** Begin body content *********** 
-		************************************** -->
-		<div id="body-content">
+    <div id="breadcrumb"><!-- #BeginLibraryItem "/Library/breadcrumb.lbi" -->
+      <a href="/">首页</a>
+      <!-- #EndLibraryItem --><!-- InstanceBeginEditable name="breadcrumbs" -->
+      / <a href="{{ page.url }}">{{ page.title }}</a>
+      <!-- InstanceEndEditable -->
+    </div>
 
-		
-			<!-- ====================================
-			/////// Begin blog single cection ///////
-			===================================== -->
-			<section id="blog-single-cection">
-				<div class="container-fluid max-width-1200">
-								
-					<!-- Begin blog single wrap
-					============================ -->
-					<div class="blog-single-wrap">
-						<div class="row">
+		{% include rightCol.html %}
 
-							<!-- Content column -->
-							<div class="col-md-12">
+    <main>
+      <div id="contentLine"></div>
+ 
+      <div id="mainLeft">
+				{% if page.pub %}
+        {% include pub-menu.html %}
+				{% endif %}
+        <div id="contentHeader">
+          <a id="topH1"></a>
 
-								<!-- Begin blog single post 
-								============================= -->
-								<article class="blog-single-post">
+          <!-- #BeginEditable "Page Title and Intro" -->
+          <h1>{{ page.title }}</h1>
+          <p id="subH1">{{ page.description }}</p>
 
+        </div>
 
+				{{ content }}
+ 
+      <div class="clear"></div>
 
-									<!-- Begin blog single heading -->
-									<div class="blog-single-post-heading">
-										<h1 class="blog-single-post-title">{{ page.title }}</h1>
-									</div>
-									<!-- End blog single heading -->
+      <!-- #EndEditable -->
+      </div><!--mainLeft-->
+    </main>
 
-									<!-- Begin blog single post inner -->
-									<div class="blog-single-post-inner">
-
-
-										<!-- Begin post content -->
-										<div class="post-content lightgallery">
-
-                                            {{ content }}
-
-										</div>
-										<!-- End post content -->
-
-
-                                        {% include share.html %}
-
-									</div>
-									<!-- End blog single post inner -->
-
-								</article> 
-								<!-- End blog single post -->
-
-								{% include comments.html %}
-
-							</div> <!-- /.col (Content column) -->
-
-						</div> <!-- /.row -->
-					</div>
-					<!-- End blog single wrap -->
-
-				</div> <!-- /.container -->
-			</section>
-			<!-- End blog single cection -->
-
-		</div>
-		<!-- End body content -->
+		<div class="clear"></div>
