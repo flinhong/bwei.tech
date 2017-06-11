@@ -1,0 +1,56 @@
+---
+layout: page
+title: 研究方向
+description: 研究方向包括有机电致发光和有机半导体激光的应用基础研究，特别是材料的性质和器件的物理的关联性研究，着重探讨了脉冲条件的影响，微结构与高性能的联系，并致力高性能有机发光器件的设计与制备工艺，为深入理解有机发光晶体管和有机半导体激光的物理化学机理，改进与开发 OLET 泵浦型有机固态激光器。
+permalink: /research/
+---
+
+<div id="heroContainer">
+
+  <div id="imageScrollerContainer">
+    <!--DO NOT EDIT THIS FRAMEWORK CODE FOR ROTATOR-->
+    <div id="heroTextVisible" aria-live="polite">
+      <div class="articleDate"></div>
+      <h2>&nbsp;</h2>
+      <p></p>
+      <div class="articleLinks">
+        <a href="#"></a>
+      </div>
+    </div>
+    <!--heroTextVisible-->
+
+
+    <div id="imageScrollerWindow">
+        {% for image in site.data.research-images %}
+        <div class="heroBlock">
+          <div class="scrollerImage">
+            <img src="{{ image.path }}" alt="{{ image.title }}" width="730" height="100%">
+          </div>
+          <div class="heroTextHolder">
+            <div class="articleDate">{{ image.time }}</div>
+            <h2>{{ image.title }}</h2>
+            <p>{{ image.description }}
+              <br>{{ image.journal }}
+            </p>
+            <a href="{{ image.url }}">{{ image.doi }}</a>
+          </div>
+          <!--heroTextHolder-->
+        </div>
+        {% endfor %}
+    </div>
+    <div class="spacer"></div>
+  </div>
+  <div id="smallControlsWrapper">
+    <div id="smallControls">
+      <a id="smallPrev" href="javascript:void(0);">
+        <span class="fa fa-chevron-circle-left fa-lg"></span>
+      </a>
+      <a id="smallPause" href="javascript:void(0);">
+        <span class="fa fa-pause fa-lg"></span>
+      </a>
+      <a id="smallNext" href="javascript:void(0);">
+        <span class="fa fa-chevron-circle-right fa-lg"></span>
+      </a>
+    </div>
+  </div>
+</div>
