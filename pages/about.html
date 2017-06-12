@@ -10,7 +10,12 @@ permalink: /about/
   <img src="/images/people/prof.jpg" alt="Article Image 1" width="175" height="auto">
   <div>
     <h2>魏斌 (Bin WEI)</h2>
-    <p class="subtitle">1969年出生于辽宁，现任上海大学教授，博士生导师</p>
+    <p class="subtitle">1969年出生于辽宁，现任上海大学教授，博士生导师<br>
+    <br>
+    联系地址：上海市闸北区延长路149号上海大学143信箱（上海大学电机楼229房间）<br>
+    邮编：200072<br>
+    电话：021-56331431<br>
+    邮箱：<a href="mailto:bwei@shu.edu.cn" style="text-transform: lowercase">bwei@shu.edu.cn</a></p>
     <div class="contentBox" style="width: 100%">
       <p></p>
       <p>
@@ -30,7 +35,7 @@ permalink: /about/
       <h3>工作经历</h3>
       <p>
         <ul>
-          <li>2007年4月-现在	上海大学	教授,博士生导师</li>
+          <li>2007年4月-现在	上海大学	教授，博士生导师</li>
           <li>2006年12月-2007年1月	北京航空航天大学	访问教授</li>
           <li>2002年8月-2007年3月	日本信州大学	研究员</li>
           <li>1993年9月-1998年10月	北京大学	讲师</li>
@@ -42,3 +47,187 @@ permalink: /about/
   </div>
 </div>
 
+<div class="clear"></div>
+
+<h2>小组成员</h2>
+<ul class="responsive_grid">
+  {% for member in site.data.current-member %}
+  <li>
+    <div class="team_member">
+       <div class="info">
+         <img src="{{ member.photo }}" alt="{{ member.name }}"/>
+         <h5>{{ member.name }}</h5>
+         <h6>{{ member.grade }}</h6> 
+      </div>
+      <div class="info_reveal">
+        <h6>联系方式<br/><br/>{{ member.name }}</h6>
+        <p><a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+<div class="clear"></div>
+
+<h2>已毕业同学</h2>
+<ul class="responsive_grid">
+  {% for member in site.data.current-member %}
+  <li>
+    <div class="team_member">
+       <div class="info">
+         <img src="{{ member.photo }}" alt="{{ member.name }}"/>
+         <h5>{{ member.name }}</h5>
+         <h6>{{ member.grade }}</h6> 
+      </div>
+      <div class="info_reveal">
+        <h6>联系方式<br/><br/>{{ member.name }}</h6>
+        <p><a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+
+
+
+
+
+<style>
+#mainLeft ul li, #mainLeft ol li, #mainLeftFull ul li, #mainLeftFull ol li, #mainColFull ul li, #mainColFull ol li {
+  margin-left: 9px;
+  padding: 3px 0;
+}
+
+#mainLeft ul li a, #mainLeft ol li a, #mainLeftFull ul li a, #mainLeftFull ol li a, #mainColFull ul li a, #mainColFull ol li a {
+  color: #f2f2f2;
+}
+
+.team_member {
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  height:250px;
+}
+
+.info {
+  height:100%;
+}
+
+.info img {
+  width:100%;
+  transition: all .4s ease-out .1s;
+   -moz-transition: all .4s ease-out .1s;
+   -webkit-transition: all .4s ease-out .1s;
+}
+
+.info h5 {
+  padding: 10px 10px 0 0;
+  margin: 0 0 10px 3px;
+  line-height: 1em;
+  opacity: 1;
+  transition: all .2s ease-out .1s;
+   -moz-transition: all .2s ease-out .1s;
+   -webkit-transition: all .2s ease-out .1s;
+  font-size: 1.125em;
+}
+
+.info h6 {
+  padding:0 10px 0 0;
+  font-size:12px;
+  margin:0 0 0 3px;
+  line-height:1em;
+  text-transform:uppercase;
+  color:#999;
+  opacity:1;
+  transition: all .2s ease-out .1s;
+   -moz-transition: all .2s ease-out .1s;
+   -webkit-transition: all .2s ease-out .1s;
+}
+
+.info_reveal {
+  height:100%; 
+  transition: all .3s ease-in 0s;
+   -moz-transition: all .3s ease-in 0s;
+   -webkit-transition: all .23s ease-in 0s;
+  position:absolute;
+  width:100%;
+  left:0;
+  top:-100%;
+  background: rgba(46,86,44,0.9);
+}
+
+.info_reveal h6 {
+  padding: 20px 8px 5px 8px;
+  line-height: 1.1em;
+		margin-bottom: 20px;
+		color: #fff;
+  font-size: 1em;
+}
+
+.info_reveal p {
+  padding:0 8px;
+  font-size:15px;
+  line-height: 1.2em;
+  color: #073a2e;
+  font-weight:400;  
+}
+
+.info_reveal a {
+  color: #073a2e;
+		word-break: break-word;
+  text-decoration:none;
+}
+
+.info_reveal a:hover {
+  color: #073a2e;
+}
+
+
+.responsive_grid {
+ display:block;
+ margin:0;
+ padding:0;
+ list-style:none;
+}
+
+.responsive_grid li {
+ cursor:pointer;
+ width: 23%;
+ margin-right: 2px;
+ padding: 0 2px 10px;
+ display:block;
+ height:auto;
+ float:left;
+ margin-bottom:10px;
+}
+
+.responsive_grid li:hover .info_reveal,
+.responsive_grid li:focus .info_reveal{
+ left: 0;
+ top:0;
+ transition: all .3s ease-out .1s;
+   -moz-transition: all .3s ease-out .1s;
+   -webkit-transition: all .3s ease-out .1s;
+}
+
+.responsive_grid li:hover .info img,
+.responsive_grid li:focus .info img {
+  width:210%;
+  margin-left:-50%;
+  transition: all .4s ease-in 0s;
+   -moz-transition: all .4s ease-in 0s;
+   -webkit-transition: all .4s ease-in 0s;
+}
+
+.responsive_grid li:hover .info h5,
+.responsive_grid li:focus .info h5,
+.responsive_grid li:hover .info h6,
+.responsive_grid li:focus .info h6 {
+  opacity: 0;
+  transition: opacity .2s linear 0s;
+   -moz-transition: opacity .2s linear 0s;
+   -webkit-transition: opacity .2s linear 0s;
+}
+</style>
