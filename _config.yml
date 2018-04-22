@@ -79,7 +79,7 @@ collections:
 
 # Plugins
 whitelist: []
-gems:
+plugins:
   - jekyll-paginate
 
 quiet:    false

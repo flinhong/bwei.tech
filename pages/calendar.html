@@ -1,0 +1,45 @@
+---
+layout: page
+title: 实验安排
+description: 凡事预则立，不预则废。
+permalink: /calendar/
+caljs: true
+---
+
+<div id='calendar'></div>
+
+<script>
+$(document).ready(function() {
+
+$('#calendar').fullCalendar({
+  header: {
+    left: 'prev,next today',
+    center: 'title',
+    right: 'listDay,listWeek,month'
+  },
+
+  // customize the button names,
+  // otherwise they'd all just say "list"
+  views: {
+    listDay: { buttonText: 'list day' },
+    listWeek: { buttonText: 'list week' }
+  },
+
+  defaultView: 'listWeek',
+  navLinks: true, // can click day/week names to navigate views
+
+  events: {
+    url: '/calendar.json',
+    error: function() {
+      $('#script-warning').show();
+    }
+  },
+  loading: function(bool) {
+    $('#loading').toggle(bool);
+  }
+
+
+});
+
+});
+</script>

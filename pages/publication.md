@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 科研成果
-description: 亦余心之所善兮，虽九死其犹未悔
+description: 亦余心之所善兮，虽九死其犹未悔。
 permalink: /publications/
 pub: true
 ---
@@ -13,6 +13,7 @@ pub: true
 2. 薄膜晶体管（TFT）及其在平板显示中的应用. 北京：电子工业出版社, 2008.03. （审校）
 
 ## 科研论文
+<!-- Also, need to edit the "pub-menu.html" file under "_includes" folder. -->
 
 ### 2017 年
 <p class="backtotop"><a href="#topH1">Back to top</a></p>

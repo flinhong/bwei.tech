@@ -723,7 +723,7 @@ header #utilityNav ul {
         font-weight: normal;
         padding: 5px 15px;
         white-space: nowrap;
-        background: 5px 7px no-repeat url("../images_css/navigation/arrow_bullet_down.png")
+        background: 5px 7px no-repeat url("../images/arrow_bullet_down.png")
     }
     header #utilityNav ul li#azindex a,
     header #utilityNav ul li#quicklinks a {
@@ -1173,7 +1173,7 @@ nav {
         font-family: 'Radley', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', 'Microsoft YaHei', '微软雅黑', Georgia, serif
     }
     nav ul li#homeIconLi a {
-        background-image: url("../images_css/navigation/home.png");
+        background-image: url("../images/home.png");
         background-repeat: no-repeat;
         background-position: top;
         color: transparent;
@@ -1278,7 +1278,7 @@ nav #cpUl li .largeNav div div b {
     margin: 10px 0;
     padding-left: 19px;
     color: #6f6345;
-    background-image: url("../images_css/navigation/info_icon.png");
+    background-image: url("../images/info_icon.png");
     background-repeat: no-repeat;
     background-position: left top
 }
@@ -1452,7 +1452,7 @@ nav #cpUl li .largeNav .largeNavRight .largeNavClose {
     cursor: pointer;
     text-decoration: none;
     color: #6f6345;
-    background-image: url("../images_css/navigation/close_button.png");
+    background-image: url("../images/close_button.png");
     background-repeat: no-repeat;
     background-position: left top
 }
@@ -1573,7 +1573,7 @@ main video {
     clear: none;
     overflow: hidden;
     margin: 20px 0 5px;
-    background: url(../images_css/content/thickthinline.gif) top left repeat-x
+    background: url(../images/thickthinline.gif) top left repeat-x
 }
 #mainLeft h3 a:link,
 #mainLeft h3 a:visited,
@@ -2194,7 +2194,7 @@ blockquote.pullQuote {
     color: #29551a;
     border-top: 5px solid #29551a;
     border-bottom: 2px solid #29551a;
-    background-image: url("../images_css/content/pull_quote_bg.png");
+    background-image: url("../images/pull_quote_bg.png");
     background-repeat: no-repeat;
     background-position: 95% 97%;
     font-family: 'Radley', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', 'Microsoft YaHei', '微软雅黑', Georgia, serif
@@ -2336,7 +2336,7 @@ dd {
     clear: both;
     overflow: hidden;
     padding: 15px 0 10px 0;
-    background: url(../images_css/content/thickthinline.gif) top left repeat-x
+    background: url(../images/thickthinline.gif) top left repeat-x
 }
 #mainLeft .articleEntry div,
 #mainLeftFull .articleEntry div {
@@ -2615,7 +2615,7 @@ ul#directory_atoz li.directory_atoz_last {
 #mainColFull ul.directory_atoz li {
     margin-left: 0;
     padding: 10px 0 5px 5px;
-    list-style: inside url("../images_css/navigation/arrow_bullet.png");
+    list-style: inside url("../images/arrow_bullet.png");
     border-bottom: 1px dotted #c2c2c2
 }
 #mainLeft ul.directory_atoz li:hover,
@@ -2723,7 +2723,7 @@ kbd {
     clear: both;
     overflow: hidden;
     margin: 20px 0 5px;
-    background: url(../images_css/content/thickthinline.gif) top left repeat-x
+    background: url(../images/thickthinline.gif) top left repeat-x
 }
 #relatedLinksBottom {
     padding: 20px 0
@@ -2742,7 +2742,7 @@ kbd {
     text-transform: uppercase;
     color: #665d52;
     border-top: 1px solid #bab8af;
-    background: url(../images_css/content/thinthickgrey.gif) bottom left repeat-x
+    background: url(../images/thinthickgrey.gif) bottom left repeat-x
 }
 #relatedLinksBottom h2 a {
     font-size: 14px;
@@ -2845,7 +2845,7 @@ kbd {
 #relatedLinksBottom ul ul ul li {
     padding-left: 20px;
     padding-left: 3px;
-    list-style-image: url("../images_css/navigation/arrow_bullet.png");
+    list-style-image: url("../images/arrow_bullet.png");
     color: #6d6c6c;
     border: none
 }
@@ -2873,7 +2873,7 @@ kbd {
     margin-bottom: 30px;
     padding: 15px 10px 10px;
     border-top: 1px solid #29551a;
-    background: url(../images_css/content/thinthickgreen.gif) bottom left repeat-x
+    background: url(../images/thinthickgreen.gif) bottom left repeat-x
 }
 #relatedLinksBottom blockquote p {
     font-size: 15px;
@@ -2903,7 +2903,7 @@ kbd {
     text-transform: none;
     color: #6d6c6c;
     border-top: none;
-    background: url(../images_css/content/thinthickgrey.gif) bottom left repeat-x;
+    background: url(../images/thinthickgrey.gif) bottom left repeat-x;
     font-family: 'Radley', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', 'Microsoft YaHei', '微软雅黑', Georgia, serif
 }
 #relatedLinksBottom #dailyBox h3 {
@@ -3067,7 +3067,7 @@ kbd {
     text-transform: uppercase;
     color: #665d52;
     border-top: 1px solid #bab8af;
-    background: url(../images_css/content/thinthickgrey.gif) bottom left repeat-x
+    background: url(../images/thinthickgrey.gif) bottom left repeat-x
 }
 #rightCol h2 a {
     font-size: 14px;
@@ -3170,7 +3170,7 @@ kbd {
 #rightCol ul ul ul li {
     padding-left: 20px;
     padding-left: 3px;
-    list-style-image: url("../images_css/navigation/arrow_bullet.png");
+    list-style-image: url("../images/arrow_bullet.png");
     color: #6d6c6c;
     border: none
 }
@@ -3215,7 +3215,7 @@ kbd {
     text-transform: none;
     color: #6d6c6c;
     border-top: none;
-    background: url(../images_css/content/thinthickgrey.gif) bottom left repeat-x;
+    background: url(../images/thinthickgrey.gif) bottom left repeat-x;
     font-family: 'Radley', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif', 'source-han-serif-sc', 'Microsoft YaHei', '微软雅黑', Georgia, serif
 }
 #rightCol #dailyBox h3 {
@@ -3251,7 +3251,7 @@ kbd {
     margin-bottom: 30px;
     padding: 15px 10px 10px;
     border-top: 1px solid #29551a;
-    background: url(../images_css/content/thinthickgreen.gif) bottom left repeat-x
+    background: url(../images/thinthickgreen.gif) bottom left repeat-x
 }
 #rightCol blockquote p {
     font-size: 15px;
@@ -4048,4 +4048,3 @@ hr {
     border-bottom: none;
     border-left: none
 }
-/*# sourceMappingURL=cp_style.min.css.map */
