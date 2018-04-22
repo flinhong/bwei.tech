@@ -2,22 +2,23 @@
   <div class="widget">
     <h2>实验室新闻</h2>
     <ul>
-      {% for news in site.data.news limit:4 %}
+      {% for news in site.news limit:4 %}
       <li><a href="{{ news.url }}">{{ news.title }}</a></li>
       {% endfor %}
     </ul>
     <p>
-      <a class="linkArrow" href="http://www.fpd.shu.edu.cn/kfyjl/xwzx.htm">更多</a>
+      <a class="linkArrow" href="/news/">更多</a>
     </p>
   </div>
   <div class="widget">
     <h2>学术报告</h2>
     <ul>
-      {% for seminar in site.data.seminar limit:3 %}
+      {% for seminar in site.seminars limit:2 %}
       <li>
         <a href="{{ seminar.url }}">
-        <h3>{{ seminar.title }}</h3>
-        <p>{{ seminar.time }}</p></a>
+        <h3>{{ seminar.seminar_title | truncate: 30 }}</h3>
+        <p>{{ seminar.seminar_time }}<br>
+        {{ seminar.seminar_addr }}</p></a>
       </li>
       {% endfor %}
     </ul>
@@ -25,7 +26,7 @@
   </div>
   <div class="widget">
     <h2>研究组成员</h2>
-    <a href="#"><img src="/images/people/prof.jpg" alt="Prof. Bin Wei" width="176" height="180"></a>
+    <a href="/about/"><img src="/images/people/prof.jpg" alt="Prof. Bin Wei" width="176" height="180"></a>
     <p><a class="linkArrow" href="/about/">关于小组</a></p>
   </div>
   <div class="widget">

@@ -73,9 +73,12 @@ timezone: Asia/Shanghai
 
 # Collections
 collections:
- photos:
-  output: true
-  permalink: /:collection/:title/
+  news:
+    output: true
+    permalink: /:collection/:title/
+  seminars:
+    output: true
+    permalink: /:collection/:title/
 
 # Plugins
 whitelist: []
